@@ -1,6 +1,6 @@
 body {
     background-color: #f4f4f4;
-    font-family:  'Press Start 2P', cursive;
+    font-family:  'Press Start 2P', monospace, sans-serif;
     background-image: linear-gradient(to right, #f3f3f3, #c0baba);
     width: 100%;
 }
@@ -64,10 +64,19 @@ canvas {
 }
 
 footer {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 412px){
+    * {
+        width: 96%;
+    }
+    body {
+        width: 98%;
+    }
+    footer > h3 {
+        text-align: center;
+    }
 }
