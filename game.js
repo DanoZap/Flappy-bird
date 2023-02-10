@@ -38,6 +38,10 @@ document.body.onkeyup = function(e) {
     }
 }
 
+document.body.addEventListener("click", function(e){ 
+    birdVelocity = FLAP_SPEED;
+})
+
 // Restart Game 
 document.getElementById('restart-btn').addEventListener('click', function(e){
     hideEndMenu();
